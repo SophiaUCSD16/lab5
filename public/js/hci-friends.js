@@ -4,21 +4,23 @@
 $(document).ready(function() {
 	initializePage();
 
-	$("#friendnames").click(function(e) {
+	$(".friendName").click(function(e) {
 			console.log("hey I just get clicked");
 			
 			// Prevent the default event of the anargram
 			e.preventDefault();
 
-			// Garb name from HTML
-			var name = $(this).first().text();
+			// // Garb name from HTML
+			var name = $(this).text();
 
-			// Anargram the name 
+			// // Anargram the name 
 			var newName = anagrammedName(name);
 
-			// Set the name to be the new Name 
-			$(this).first().text(newName);
-			console.log(name);
+			$(this).html(newName)
+
+			// // Set the name to be the new Name 
+			// $(this).first().text(newName);
+			// console.log(name);
 	});
 
 })

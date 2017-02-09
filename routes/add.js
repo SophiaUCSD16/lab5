@@ -1,11 +1,18 @@
 var data = require("../data.json");
 
-exports.addFriend = function(req, res) {    
+exports.view = function(req, res) {    
 	// Your code goes here
 	console.log("add Friends caller");
-	var name = req.query.name;
-	var descirption = req.query.descirption;
+	var currentName = req.query.name;
+	var currentDes = req.query.descirption;
 
-	// add new friend to the arry of friends
-	data.friends.puch(newFriedn);
+	var newFriend = {
+		name: currentName,
+		description: currentDes,
+		imageURL: "http://lorempixel.com/400/400/people"
+	}
+		
+	data.friends.push(newFriend);
+
+	res.render('index', data);
  }

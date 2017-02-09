@@ -5,4 +5,5 @@ exports.view = function(req, res){
 	// var data = req.params.data;
 	console.log(data);
 	res.render('index', data);
+
 };

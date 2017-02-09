@@ -4,7 +4,7 @@
 <head>
 	<title>My HCI Friends</title>	
 	<meta charset="utf-8">
-	
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -15,6 +15,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">  
 
     <link href="css/hci-friends.css" rel="stylesheet">  
+
 </head>
 
 <body>
@@ -36,10 +37,13 @@
 
 	 {{#each friends}}
       <div class="friends" id="{{id}}">
-        <a href="" class="thumbnail">
+        <a href="#" class="thumbnail">
           <img src="{{imageURL}}" class="img-reponsive img-rounded"/>
-          <p id="friendnames">{{name}}</p>
         </a>
+		
+		<h3>
+        <a class="friendName" href="#">{{name}}</a>
+    	</h3>
       </div>
     {{/each}}
 
