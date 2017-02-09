@@ -30,5 +30,11 @@
 			"description": "Really into psychology",
 			"imageURL": "http://www.nap.edu/html/biomems/photo/anewell.JPG"
 		}
+		{
+			"name": "Sophia",
+			"description": "A new friend in the group",
+			"imageURL": "http://lorempiexl.com/400/400/people"
+
+		}
 	]
 }

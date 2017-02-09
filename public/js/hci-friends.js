@@ -3,6 +3,24 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
+
+	$("#friendnames").click(function(e) {
+			console.log("hey I just get clicked");
+			
+			// Prevent the default event of the anargram
+			e.preventDefault();
+
+			// Garb name from HTML
+			var name = $(this).first().text();
+
+			// Anargram the name 
+			var newName = anagrammedName(name);
+
+			// Set the name to be the new Name 
+			$(this).first().text(newName);
+			console.log(name);
+	});
+
 })
 
 /*
